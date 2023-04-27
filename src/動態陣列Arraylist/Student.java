@@ -15,11 +15,24 @@ public class Student
     public int eng;
     public int math;
     public  int id;
-    
 
-    
-  
-    
+    public Student(String name, int eng, int math, int id) {
+        this.name = name;
+        this.eng = eng;
+        this.math = math;
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", eng=" + eng +
+                ", math=" + math +
+                ", id=" + id +
+                '}';
+    }
+
     public void show()
     {
         System.out.println("id:" + this.id);

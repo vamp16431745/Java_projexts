@@ -28,10 +28,14 @@ public void set月(int 月)
         System.out.println("月份設定失敗:" +月);
         System.out.println("月份必須為1~12月");
         return;
+
+
+
     }
    else
    {
          this.月=月;
+
     }
     System.out.println("月份設定成功:" + 月);
     
@@ -48,6 +52,7 @@ public void set月(int 月)
         else 
         {
             this.日=日;
+
         }
         System.out.println("日期設定成功:" + 日);
     }

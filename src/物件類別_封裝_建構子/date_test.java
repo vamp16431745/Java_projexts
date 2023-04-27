@@ -22,8 +22,8 @@ public class date_test {
       d.顯示資料();
       
       d.set年(2023);
-      d.set月(4);
-      d.set日(7);
+      d.set月(4555);
+      d.set日(89898989);
       d.顯示資料();
        
       

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package 動態陣列Arraylist;
+package map地圖;
 
 import 序列化.Class;
 
@@ -15,7 +15,7 @@ import java.io.ObjectOutputStream;
 
 public class AppData
 {
-    private bank b;
+    private TestExtra te;
     private final String filename;  //final 建構子初值後禁止修改
     
     public AppData()
@@ -29,7 +29,7 @@ public class AppData
     {
         FileOutputStream fos =new FileOutputStream(filename);
         ObjectOutputStream oos=new ObjectOutputStream(fos);
-        oos.writeObject(this.b);    //this.c 需透過 set班級() 完成設定
+        oos.writeObject(this.te);    //this.c 需透過 set班級() 完成設定
         oos.close();
         fos.close();
         
@@ -39,19 +39,16 @@ public class AppData
     {
         FileInputStream fis=new FileInputStream(filename);
         ObjectInputStream ois=new ObjectInputStream(fis);
-        this.b=(bank) ois.readObject();   //(Class) 將讀到的Object 轉 Class
+        this.te=(TestExtra) ois.readObject();   //(Class) 將讀到的Object 轉 Class
         ois.close();
         fis.close();
     }
 
-    public void setB(bank b) {
-        this.b = b;
+    public TestExtra getTe() {
+        return te;
     }
 
-    public bank getB() {
-        return b;
+    public void setTe(TestExtra te) {
+        this.te = te;
     }
-    
-   
-    
 }

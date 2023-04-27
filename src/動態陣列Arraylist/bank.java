@@ -32,7 +32,9 @@ public class bank implements Serializable
         System.out.println("加入客戶:"+e.名稱);
                 
     }
-    
+
+
+
     public void 輸出銀行資料()
 {
     

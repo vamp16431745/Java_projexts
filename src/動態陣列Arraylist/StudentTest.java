@@ -56,23 +56,13 @@ public class StudentTest {
       //d.art=16;
       //d.show();
               
-       x1=new Student();
-       x1.name ="阿瓜";
-       x1.eng=89;
-       x1.math=88;
-       x1.id=852;
+       x1=new Student("阿瓜",89,88,854);
+
+       x2=new Student("西瓜",56,87,698);
+
        
-       x2=new Student();
-       x2.name ="西瓜";
-       x2.eng=56;
-       x2.math=87;
-       x2.id=698;
-       
-        x3=new Student();
-       x3.name ="北瓜";
-       x3.eng=75;
-       x3.math=31;
-       x3.id=956;
+        x3=new Student("北瓜",75,31,956);
+
        
        
        f1=new Class();
