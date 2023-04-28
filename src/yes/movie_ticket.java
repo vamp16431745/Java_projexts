@@ -22,21 +22,21 @@ public class movie_ticket
          System.out.println("請輸入票種 + 人數");
          輸入框1=sc.next(); 
          
-        // if (null!=輸入框1)
+         if (null!=輸入框1)
         switch (輸入框1) {
-            case "全票":
+            case "full":
                 票價=310;
                 break;
-            case "優待票":
+            case "good":
                 票價=290;
                 break;
-            case "兒童票":
+            case "child":
                 票價=260;
                 break;
-            case "早鳥票":
+            case "bird":
                 票價=280;
                 break;
-            case "愛心票":
+            case "love":
                 票價=155;
                 break;
             default:
