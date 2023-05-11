@@ -7,7 +7,7 @@ package 動態陣列Arraylist;
 
 /**
  *
- * @author user
+ * @author user  02林建陞
  */
 public class bank_test {
 
@@ -52,31 +52,36 @@ public class bank_test {
 
         c1.加入帳戶(a1);
         b1.加入客戶(c1);
-        b1.輸出銀行資料();
+//        b1.輸出銀行資料();
 
 
         c2.加入帳戶(a2);
         b1.加入客戶(c2);
-        b1.輸出銀行資料();
+//        b1.輸出銀行資料();
 
 
         c2.加入帳戶(a3);
         b1.加入客戶(c3);
-        b1.輸出銀行資料();
+//        b1.輸出銀行資料();
 
 
+        //AppData
         AppData appData=new AppData();
         appData.setB(b1);
-//        try {
-//            appData.SaveData();
-//            System.out.println("存檔成功");
-//
-//        } catch (Exception e) {
-//            System.out.println("存檔失敗");
-//            System.out.println(e.toString());
-//            //e.printStackTrace();  //完整錯誤訊息
-//        }
 
+
+        //存檔
+        try {
+            appData.SaveData();
+            System.out.println("存檔成功");
+
+        } catch (Exception e) {
+            System.out.println("存檔失敗");
+            System.out.println(e.toString());
+            //e.printStackTrace();  //完整錯誤訊息
+        }
+
+       //讀檔
         try
         {
             appData.ReadData();
@@ -87,8 +92,8 @@ public class bank_test {
         } catch (Exception e) {
             System.out.println("讀檔失敗");
             System.out.println(e.toString());
-            // e.printStackTrace();   //完整錯誤訊息
+             e.printStackTrace();   //完整錯誤訊息
         }
-
+//
     }
 }
